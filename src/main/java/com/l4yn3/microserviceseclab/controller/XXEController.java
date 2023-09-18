@@ -20,4 +20,13 @@ public class XXEController {
         doc.getDocumentElement().normalize();
         return "Hello World";
     }
+
+    @RequestMapping(value = "/onesft")
+    public String one_sft(@RequestParam(value = "xml_str") String xmlStr, @RequestParam(value = "xml_str2") String xmlStr2) throws Exception {
+        DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+        InputStream stream = new ByteArrayInputStream(xmlStr.getBytes("UTF-8"));
+        org.w3c.dom.Document doc = documentBuilder.parse(stream);
+        doc.getDocumentElement().normalize();
+        return "Hello World";
+    }
 }

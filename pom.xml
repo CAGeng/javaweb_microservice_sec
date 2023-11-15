@@ -88,7 +88,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.12</version> <!-- 请根据你的需要查找最新版本 -->
+			<version>1.6.4</version> <!-- 请根据你的需要查找最新版本 -->
 		</dependency>
 
 
